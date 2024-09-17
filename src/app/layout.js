@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter, Manrope } from 'next/font/google'
 import Header from '@/src/components/Header'
 import Footer from '../components/Footer'
+import Subscribe from '../components/Subscribe'
 
 const inter = Inter({ subsets: ['latin'], display:'swap', variable:'--font-in' })
 const manrope = Manrope({ subsets: ['latin'], display:'swap', variable:'--font-mr' })
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={cx(inter.variable, manrope.variable, "font-mr bg-light max-w-[1440px] px-10 mx-auto")}>
         <Header/>
         {children}
+        <Subscribe/>
         <Footer/>
       </body>
     </html>

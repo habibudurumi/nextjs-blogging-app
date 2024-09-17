@@ -12,7 +12,7 @@ const RecentPosts = ({ blogs }) => {
               <Link href={'/categories/all'} className=' font-medium py-1 px-4 text-lg rounded-full border border-dark text-dark hover:bg-dark hover:text-light transition-all ease duration-500'>view all</Link>
           </div>
 
-          <div className="grid grid-cols-3 grid-rows-3 gap-16 mt-16">
+          <div className="grid grid-cols-3 grid-rows-2 gap-16 mt-16">
               {
                   sortedBlogs.slice(5, 11).map((blog, index) => {
                       return (
